@@ -51,7 +51,7 @@ const Home = () => {
   }, [])
 
   const loginfake = () => {
-    if (emailInput == 'anderson@gmail.com' && senhaInput == 'senha1234') {
+    if (emailInput == 'email123' && senhaInput == 'senha123') {
       navigate('/measure')
     }
   }
@@ -124,7 +124,7 @@ const Home = () => {
               placeholder="••••••••"
               onChange={(e) => setSenha(e.target.value)}
             />
-            <Button fullWidth style={{ alignSelf: 'center' }} onClick={() => goMeansure()} variant="contained">Entrar</Button>
+            <Button fullWidth style={{ alignSelf: 'center' }} onClick={() => loginfake()} variant="contained">Entrar</Button>
 
             <div style={{ display: 'flex', gap: 7 }} >
               <SubTitle   >
