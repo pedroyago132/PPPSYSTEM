@@ -90,7 +90,17 @@ function App() {
     <ThemeProvider theme={theme}>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Home />} />
+          
+        </Routes>
+      </BrowserRouter>
+    </ThemeProvider>
+
+  );
+}
+
+export default App;
+
+<Route path="/" element={<Home />} />
           <Route path="/measure" element={<Measurement />} />
           <Route path="/registro" element={<Register />} />
           <Route path="/qrcode" element={<QRCode />} />
@@ -103,11 +113,3 @@ function App() {
           <Route path="/loading" element={<LoadingScreen />} />
           <Route path="/google" element={<GoogleAgenda />} />
           <Route path="/gerar" element={<GenerateVideo />} />
-        </Routes>
-      </BrowserRouter>
-    </ThemeProvider>
-
-  );
-}
-
-export default App;
